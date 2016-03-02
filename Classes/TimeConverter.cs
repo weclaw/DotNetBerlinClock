@@ -9,7 +9,8 @@ namespace BerlinClock
     {
         public string convertTime(string aTime)
         {
-            throw new NotImplementedException();
+            var clock = new BerlinClockInstance(aTime);
+            return clock.GenerateClockOutput();
         }
     }
 }
